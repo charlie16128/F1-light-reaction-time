@@ -1,37 +1,20 @@
 <!DOCTYPE html>
 <html lang="zh-TW">
-
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>F1 起跑燈號模擬器 V2</title>
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
     <div class="container">
         <div class="gantry">
-            <div class="light-unit">
-                <div class="bulb"></div>
-                <div class="bulb"></div>
-            </div>
-            <div class="light-unit">
-                <div class="bulb"></div>
-                <div class="bulb"></div>
-            </div>
-            <div class="light-unit">
-                <div class="bulb"></div>
-                <div class="bulb"></div>
-            </div>
-            <div class="light-unit">
-                <div class="bulb"></div>
-                <div class="bulb"></div>
-            </div>
-            <div class="light-unit">
-                <div class="bulb"></div>
-                <div class="bulb"></div>
-            </div>
+            <div class="light-unit"><div class="bulb"></div><div class="bulb"></div></div>
+            <div class="light-unit"><div class="bulb"></div><div class="bulb"></div></div>
+            <div class="light-unit"><div class="bulb"></div><div class="bulb"></div></div>
+            <div class="light-unit"><div class="bulb"></div><div class="bulb"></div></div>
+            <div class="light-unit"><div class="bulb"></div><div class="bulb"></div></div>
         </div>
 
         <div class="stats">
@@ -39,12 +22,11 @@
             <div class="best-record">最佳紀錄: <span id="best">---</span></div>
         </div>
 
-        <div class="hint" id="hint">按「任意鍵」開始序列<br>燈滅後再次按鍵測量反應時間</div>
+        <div class="hint" id="hint">點擊螢幕或按任意鍵開始序列<br>燈滅後再次操作測量反應</div>
     </div>
 
-    <audio id="beep" src="Sound.m4a"></audio>
+    <audio id="beep" src="Sound.m4a" preload="auto"></audio>
 
     <script src="script.js"></script>
 </body>
-
 </html>
