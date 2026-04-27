@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>F1 起跑燈號模擬器 V2</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="gantry">
+            <div class="light-unit">
+                <div class="bulb"></div>
+                <div class="bulb"></div>
+            </div>
+            <div class="light-unit">
+                <div class="bulb"></div>
+                <div class="bulb"></div>
+            </div>
+            <div class="light-unit">
+                <div class="bulb"></div>
+                <div class="bulb"></div>
+            </div>
+            <div class="light-unit">
+                <div class="bulb"></div>
+                <div class="bulb"></div>
+            </div>
+            <div class="light-unit">
+                <div class="bulb"></div>
+                <div class="bulb"></div>
+            </div>
+        </div>
+
+        <div class="stats">
+            <div id="timer">0.000s</div>
+            <div class="best-record">最佳紀錄: <span id="best">---</span></div>
+        </div>
+
+        <div class="hint" id="hint">按「任意鍵」開始序列<br>燈滅後再次按鍵測量反應時間</div>
+    </div>
+
+    <audio id="beep" src="Sound.m4a"></audio>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
